@@ -55,7 +55,7 @@ app.post('/api/table', async (req, res, next) => {
     
     pool.query(CREATE_TABLE_SQL)
     .then(() => {
-         res.send(`Table created`);
+        res.send(`Table created`);
     })
     .catch((error) => {
         res.send(error);
